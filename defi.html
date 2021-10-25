@@ -14311,10 +14311,10 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Decentralized-Finance">Decentralized Finance<a class="anchor-link" href="#Decentralized-Finance">&#182;</a></h1><p>Decentralized finance aims at providing financial services without a financial intermediary. Such services include:</p>
+<h1 id="Decentralized-Finance">Decentralized Finance<a class="anchor-link" href="#Decentralized-Finance">&#182;</a></h1><p>Decentralized finance aims at providing <strong>financial services without a classical financial intermediary</strong>. Such services include:</p>
 <ul>
 <li>Borrowing and lending</li>
-<li><strong>Exchange</strong></li>
+<li><strong>Exchange</strong> ($\leftarrow$ this lecture)</li>
 <li>Derivatives</li>
 <li>Securitization (tokenization)</li>
 </ul>
@@ -14349,11 +14349,6 @@ a.anchor-link {
 <li>Often unregulated</li>
 </ul>
 <p><strong>In a decentralized system, users hold custody of their own funds!</strong></p>
-<h2 id="Types-of-markets-(exchange-mechanisms)">Types of markets (exchange mechanisms)<a class="anchor-link" href="#Types-of-markets-(exchange-mechanisms)">&#182;</a></h2><ol>
-<li><strong>Order book $\rightarrow$ typical exchange</strong></li>
-<li><strong>Request for quote $\rightarrow$ over the counter (OTC)</strong></li>
-<li>Automated Market Making (AMM) $\rightarrow$ liquidity pools</li>
-</ol>
 
 </div>
 </div>
@@ -14373,6 +14368,11 @@ a.anchor-link {
 <li>0x</li>
 </ul>
 <p>Please note that a protocol is not a user interface. This is, <strong>we can build our own exchange UI based on an exchange protocol</strong>.</p>
+<h2 id="Exchange-mechanisms">Exchange mechanisms<a class="anchor-link" href="#Exchange-mechanisms">&#182;</a></h2><ol>
+<li><strong>Order book $\rightarrow$ typical exchange</strong></li>
+<li><strong>Request for quote $\rightarrow$ over the counter (OTC)</strong></li>
+<li>Automated Market Making (AMM) $\rightarrow$ liquidity pools</li>
+</ol>
 
 </div>
 </div>
@@ -14394,7 +14394,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Request tokens that are currently available</span>
@@ -14417,7 +14417,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
 
 
 
@@ -14539,12 +14539,13 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="The-order-object">The order object<a class="anchor-link" href="#The-order-object">&#182;</a></h2>
+<h2 id="The-order-object">The order object<a class="anchor-link" href="#The-order-object">&#182;</a></h2><p>A <strong>set of trade conditions</strong> provided by the market maker that can be <strong>accepted by the taker</strong>. Note that you don't buy or sell an order object but merely accept the conditions as they are.</p>
+
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">WETH_address</span> <span class="o">=</span> <span class="s1">&#39;0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2&#39;</span>
@@ -14566,36 +14567,36 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>{&#39;total&#39;: 71,
+<pre>{&#39;total&#39;: 74,
  &#39;page&#39;: 1,
  &#39;perPage&#39;: 1,
  &#39;records&#39;: [{&#39;order&#39;: {&#39;signature&#39;: {&#39;signatureType&#39;: 3,
-     &#39;r&#39;: &#39;0x69296930a5589486a7e1782620f4d6fc029128a9efa745bf4a703ccbc439fead&#39;,
-     &#39;s&#39;: &#39;0x13d70f0073bdeeec2072b3aee7b7aee1405c0862c8294bf96f511dafe30335db&#39;,
+     &#39;r&#39;: &#39;0x8b68caa394aeb80e18e868eef3d34c9af5e4701f4a98d5050b147ac584be3b39&#39;,
+     &#39;s&#39;: &#39;0x59cc1be1ce31bbd6e2cdb046b2a03d9594dfff68a4f9c69c6696c900ff377f03&#39;,
      &#39;v&#39;: 28},
     &#39;sender&#39;: &#39;0x0000000000000000000000000000000000000000&#39;,
-    &#39;maker&#39;: &#39;0x96aea3a04627f96a038b348b4d34ac24df08820a&#39;,
+    &#39;maker&#39;: &#39;0x4a45afd5a9691407b2b8e6ed8052a511ee7f01e9&#39;,
     &#39;taker&#39;: &#39;0x0000000000000000000000000000000000000000&#39;,
     &#39;takerTokenFeeAmount&#39;: &#39;0&#39;,
-    &#39;makerAmount&#39;: &#39;10000000000000000000&#39;,
-    &#39;takerAmount&#39;: &#39;65856734&#39;,
+    &#39;makerAmount&#39;: &#39;6262301345676014592&#39;,
+    &#39;takerAmount&#39;: &#39;13874662000553355116544&#39;,
     &#39;makerToken&#39;: &#39;0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2&#39;,
-    &#39;takerToken&#39;: &#39;0x2260fac5e5542a773aa44fbcfedf7c193bc2c599&#39;,
-    &#39;salt&#39;: &#39;1635160019086&#39;,
+    &#39;takerToken&#39;: &#39;0xf629cbd94d3791c9250152bd8dfbdf380e2a3b9c&#39;,
+    &#39;salt&#39;: &#39;1635180845765&#39;,
     &#39;verifyingContract&#39;: &#39;0xdef1c0ded9bec7f1a1670819833240f027b25eff&#39;,
     &#39;feeRecipient&#39;: &#39;0x0000000000000000000000000000000000000000&#39;,
-    &#39;expiry&#39;: &#39;1635160061&#39;,
+    &#39;expiry&#39;: &#39;1635180873&#39;,
     &#39;chainId&#39;: 1,
     &#39;pool&#39;: &#39;0x0000000000000000000000000000000000000000000000000000000000000017&#39;},
-   &#39;metaData&#39;: {&#39;orderHash&#39;: &#39;0x010e573817dcae81cb077c73bbf2b81f40f9447bb6d64a3e97cca89843a610b3&#39;,
-    &#39;remainingFillableTakerAmount&#39;: &#39;65856734&#39;,
-    &#39;createdAt&#39;: &#39;2021-10-25T11:06:59.681Z&#39;}}]}</pre>
+   &#39;metaData&#39;: {&#39;orderHash&#39;: &#39;0x036919cbc9a0d2061ee470e5315fc5bcfc0ae3d115763560344ddc44c4decfd2&#39;,
+    &#39;remainingFillableTakerAmount&#39;: &#39;13874662000553355116544&#39;,
+    &#39;createdAt&#39;: &#39;2021-10-25T16:54:07.299Z&#39;}}]}</pre>
 </div>
 
 </div>
@@ -14609,12 +14610,15 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Some relevant fields from the order object above:</p>
 <div class="highlight"><pre><span></span><span class="s1">&#39;order&#39;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="s1">&#39;maker&#39;</span><span class="p">:</span> <span class="s1">&#39;0xc0e554c1951c0193e020156f68dce15064769937&#39;</span><span class="p">,</span>  <span class="c1"># Address of the party that creates the order</span>
-    <span class="s1">&#39;taker&#39;</span><span class="p">:</span> <span class="s1">&#39;0x0000000000000000000000000000000000000000&#39;</span><span class="p">,</span>  <span class="c1"># Address of the party that is allowed to fill the order (OTC)</span>
-    <span class="s1">&#39;makerAmount&#39;</span><span class="p">:</span> <span class="s1">&#39;396000000000000000000&#39;</span><span class="p">,</span>  <span class="c1"># Amount of makerToken being sold by the maker</span>
-    <span class="s1">&#39;takerAmount&#39;</span><span class="p">:</span> <span class="s1">&#39;168299999999999980000&#39;</span><span class="p">,</span>  <span class="c1"># Amount of takerToken being sold by the taker</span>
+    <span class="c1"># Who?</span>
+    <span class="s1">&#39;maker&#39;</span><span class="p">:</span> <span class="s1">&#39;0xc0e554c1951c0193e020156f68dce15064769937&#39;</span><span class="p">,</span>  <span class="c1"># Party that created the order</span>
+    <span class="s1">&#39;taker&#39;</span><span class="p">:</span> <span class="s1">&#39;0x0000000000000000000000000000000000000000&#39;</span><span class="p">,</span>  <span class="c1"># Party that is allowed to fill the order (OTC)</span>
+    <span class="c1"># What?</span>
     <span class="s1">&#39;makerToken&#39;</span><span class="p">:</span> <span class="s1">&#39;0xaf4c09112788ed97ac9c6284abbd2443163cfc90&#39;</span><span class="p">,</span>  <span class="c1"># ERC20 token the maker is selling</span>
     <span class="s1">&#39;takerToken&#39;</span><span class="p">:</span> <span class="s1">&#39;0x57ab1ec28d129707052df4df418d58a2d46d5f51&#39;</span><span class="p">,</span>  <span class="c1"># ERC20 token the taker is selling</span>
+    <span class="c1"># How much?</span>
+    <span class="s1">&#39;makerAmount&#39;</span><span class="p">:</span> <span class="s1">&#39;396000000000000000000&#39;</span><span class="p">,</span>  <span class="c1"># Amount of makerToken being sold by the maker</span>
+    <span class="s1">&#39;takerAmount&#39;</span><span class="p">:</span> <span class="s1">&#39;168299999999999980000&#39;</span><span class="p">,</span>  <span class="c1"># Amount of takerToken being sold by the taker</span>
     <span class="s1">&#39;feeRecipient&#39;</span><span class="p">:</span> <span class="s1">&#39;0x0f8c816a31daef932b9f8afc3fcaa62a557ba2f7&#39;</span><span class="p">,</span>  <span class="c1"># Fees to incentivize off-chain order relay</span>
     <span class="s1">&#39;expiry&#39;</span><span class="p">:</span> <span class="s1">&#39;1634218842&#39;</span><span class="p">,</span>
 <span class="s1">&#39;metaData&#39;</span><span class="p">:</span> <span class="p">{</span>
@@ -14627,14 +14631,14 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Order-book">Order book<a class="anchor-link" href="#Order-book">&#182;</a></h2><p>Let's say we want exchange Etherium against USD.</p>
+<h2 id="Order-book">Order book<a class="anchor-link" href="#Order-book">&#182;</a></h2><p>Let's say we want <strong>exchange Etherium against USD</strong>.</p>
 <p>We will borrow some terminology from foreign exchange markets, i.e.</p>
 <ul>
 <li>Etherium (WETH) will be our base asset and</li>
 <li>USD (DAI) will be out quoted asset.</li>
 </ul>
-<p>Thus, we will quote the price of Etherium in USD.</p>
-<p>Note that USD cannot be settled on the Etherium blockchain, hence, we will use a stable coin called DAI that is pegged to the USD (i.e. 1 DAI = 1 USD).</p>
+<p>Thus, we will <strong>quote the price of Etherium in USD</strong>.</p>
+<p>Note that USD cannot be settled on the Etherium blockchain, hence, we will use a stable coin called DAI that is pegged to the USD (i.e. <strong>1 DAI = 1 USD</strong>).</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14984,11 +14988,11 @@ a.anchor-link {
 <p>Let us analyze the order book in a human friendly format from a <strong>price taker perspective</strong>.</p>
 <p><strong>Bid</strong>, i.e. the price at which the <strong>taker sells WETH</strong> for USD</p>
 
-<pre><code>'makerAmount': '17323698973795344711680',  # Amount of DAI  being sold by the maker
+<pre><code>'makerAmount': '17323698973795344711680',  # Amount of DAI  being bought by the taker
 'takerAmount': '4585635752723798528',      # Amount of WETH being sold by the taker</code></pre>
 <p><strong>Ask</strong>, i.e. the price at which the <strong>taker buys WETH</strong> for USD</p>
 
-<pre><code>'makerAmount': '10000000000000000000',     # Amount of WETH being sold by the maker
+<pre><code>'makerAmount': '10000000000000000000',     # Amount of WETH being bought by the taker
 'takerAmount': '38006811467435057610752',  # Amount of DAI  being sold by the taker</code></pre>
 <p>We could quote prices (and volumes) in WETH or DAI, here we use DAI, hence,</p>
 <p>$
@@ -15231,10 +15235,10 @@ $</p>
 </ul>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This is just generating the HTML and PDF version of the script.</span>
@@ -15251,43 +15255,12 @@ $</p>
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>0</pre>
 </div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Thank you for your attention.</p>
 
 </div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div>
 </body>
 
