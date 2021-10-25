@@ -1,4 +1,4 @@
-# Video lecture on ``Decentralized Finance''
+# Video lecture on Decentralized Finance (DeFi)
 Dr. Fabian Woebbeking | woebbeking@finance.uni-frankfurt.de
 
 The video is available here:
@@ -23,4 +23,4 @@ If you want to install Python check out https://www.anaconda.com/products/indivi
 
 ## Contribute
 
-If you want to contribute to the material in this repository, e.g. fix bugs and errors, please send a [pull request](https://github.com/cafawo/derivatives/pulls) via Git. This will yield you a place in the [hall of fame HERE](https://github.com/cafawo/DeFi/graphs/contributors) ┏(-_-)┛┗(-_-﻿ )┓┗(-_-)┛┏(-_-)┓
+If you want to contribute to the material in this repository, e.g. fix bugs and errors, please send a [pull request](https://github.com/cafawo/derivatives/pulls) via Git. This will yield you a place in the [hall of fame HERE ┏(-_-)┛┗(-_-﻿ )┓┗(-_-)┛┏(-_-)┓](https://github.com/cafawo/DeFi/graphs/contributors)
