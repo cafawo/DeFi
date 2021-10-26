@@ -1,7 +1,7 @@
 # Video lecture on Decentralized Finance (DeFi)
 Dr. Fabian Woebbeking | woebbeking@finance.uni-frankfurt.de
 
-The video is available here:
+The video is available here: https://www.youtube.com/watch?v=idN7_6LfMQM
 
 
 
