@@ -15,7 +15,7 @@ Three easy peasy ways to get going:
 
 3. Clone this Git repository or download ``defi.ipynb`` to **locally** follow along in Python/Jupyter.
 
-3. If you want to use Colab instead of installing Python you can find [instructions HERE](https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb)
+3. If you want to use Colab instead of installing Python you can find [Colab notebook HERE](https://colab.research.google.com/github/cafawo/DeFi/blob/master/defi.ipynb) and  [instructions HERE](https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb)
 
 ## Python distribution
 
